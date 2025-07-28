@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroHeading() {
   return (
-    <div>
+    <div className="z-10">
       <h1 className={`${styles.heroHeadText}`}>
         Hey, I&apos;m <span className="text-[#915eff]">Denis</span>
       </h1>
