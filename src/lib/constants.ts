@@ -3,17 +3,11 @@ import {
   typescript,
   html,
   css,
-  reactjs,
-  tailwind,
   petsoft,
   rmtdev,
   wordanalytics,
   qed,
   sandbox,
-  vue,
-  linux,
-  aws,
-  nextjs,
   marius,
   ioana,
   aldana,
@@ -68,30 +62,6 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Vue JS",
-    icon: vue,
-  },
-  {
-    name: "Next JS",
-    icon: nextjs,
-  },
-  {
-    name: "Linux",
-    icon: linux,
-  },
-  {
-    name: "Aws",
-    icon: aws,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
 ];
 
