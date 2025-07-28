@@ -3,7 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 import { fadeIn } from "@/lib/motion";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { github } from "@/static";
 
 type Project = {
@@ -25,14 +25,7 @@ type ProjectCardProps = {
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary relative p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+      <Tilt className="bg-tertiary relative p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <Image
             width={360}
