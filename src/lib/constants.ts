@@ -1,13 +1,16 @@
 import {
   javascript,
   typescript,
-  html,
-  css,
+  reactjs,
   petsoft,
   rmtdev,
   wordanalytics,
   qed,
   sandbox,
+  vue,
+  linux,
+  aws,
+  nextjs,
   marius,
   ioana,
   aldana,
@@ -48,20 +51,32 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "Vue JS",
+    icon: vue,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "Aws",
+    icon: aws,
   },
 ];
 
