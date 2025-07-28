@@ -2,7 +2,7 @@ import { fadeIn } from "@/lib/motion";
 import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 
 type AboutServiceCardProps = {
   index: number;
