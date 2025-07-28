@@ -3,8 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 import { fadeIn } from "@/lib/motion";
-import Tilt from "react-parallax-tilt";
 import { github } from "@/static";
+import { Tilt } from "react-tilt";
 
 type Project = {
   name: string;
