@@ -5,20 +5,15 @@ import {
   css,
   reactjs,
   tailwind,
-  nodejs,
-  git,
-  docker,
   petsoft,
   rmtdev,
   wordanalytics,
   qed,
   sandbox,
-  threejs,
   vue,
   linux,
   aws,
   nextjs,
-  nuxtjs,
   marius,
   ioana,
   aldana,
@@ -87,10 +82,6 @@ const technologies = [
     icon: nextjs,
   },
   {
-    name: "Nuxt JS",
-    icon: nuxtjs,
-  },
-  {
     name: "Linux",
     icon: linux,
   },
@@ -101,22 +92,6 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
