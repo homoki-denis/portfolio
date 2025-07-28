@@ -1,7 +1,4 @@
 import {
-  mobile,
-  backend,
-  web,
   javascript,
   typescript,
   html,

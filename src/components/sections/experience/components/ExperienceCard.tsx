@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import React from "react";
@@ -26,7 +26,9 @@ export default function ExperienceCard({ experience }: ExperienceCardProps) {
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div>
-          <img
+          <Image
+            width={100}
+            height={100}
             src={experience.icon.src}
             alt={experience.company_name}
             className="rounded-full object-cover"

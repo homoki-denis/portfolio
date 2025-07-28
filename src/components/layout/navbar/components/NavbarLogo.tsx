@@ -17,7 +17,13 @@ export default function NavbarLogo() {
           window.scrollTo(0, 0);
         }}
       >
-        <Image src={logo} alt="logo image" className="w-9 h-9 object-contain" />
+        <Image
+          src={logo}
+          alt="logo image"
+          width={36}
+          height={36}
+          className="w-9 h-9 object-contain"
+        />
         <p className="text-white text-[18px] font-bold cursor-pointer">
           Denis Homoki
         </p>

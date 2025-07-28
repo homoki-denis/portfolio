@@ -1,4 +1,5 @@
-import { StaticImageData } from "next/image";
+"use client";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import React from "react";
 import { fadeIn } from "@/lib/motion";
@@ -33,7 +34,9 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         className="bg-tertiary relative p-5 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img
+          <Image
+            width={360}
+            height={230}
             src={project.image.src}
             alt={project.name}
             className="w-full h-full object-cover rounded-2xl"
@@ -44,7 +47,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             onClick={() => window.open(project.source_code_link, "_blank")}
             className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
           >
-            <img src={github.src} alt="github" />
+            <Image width={40} height={40} src={github.src} alt="github" />
           </div>
         </div>
 
@@ -56,7 +59,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          {project.tags.map((tag, index) => (
+          {project.tags.map((tag) => (
             <p key={tag.name} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>

@@ -9,6 +9,8 @@ export default function NavbarMenu() {
   return (
     <>
       <Image
+        width={28}
+        height={28}
         src={toggle ? close : menu}
         alt="menu icon"
         className="w-[28px] h-[28px] object-contain cursor-pointer"

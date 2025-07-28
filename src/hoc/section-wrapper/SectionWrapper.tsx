@@ -12,7 +12,7 @@ export default function SectionWrapper<T extends object>(
   return function HOC(props: T) {
     return (
       <motion.section
-        variants={staggerContainer()}
+        variants={staggerContainer(0.1)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: true, amount: 0.25 }}

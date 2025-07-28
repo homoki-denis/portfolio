@@ -1,6 +1,7 @@
+"use client";
 import { fadeIn } from "@/lib/motion";
 import { motion } from "framer-motion";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { Tilt } from "react-tilt";
 
@@ -22,7 +23,13 @@ export default function AboutServiceCard({
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-          <img src={icon.src} alt={title} className="w-16 h-16" />
+          <Image
+            width={16}
+            height={16}
+            src={icon.src}
+            alt={title}
+            className="w-16 h-16"
+          />
           <h3 className="text-center text-white text-[20px] font-bold">
             {title}
           </h3>

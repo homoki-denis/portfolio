@@ -1,7 +1,8 @@
+"use client";
 import { motion } from "framer-motion";
 import React from "react";
 import { fadeIn } from "@/lib/motion";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 type FeedbackCardProps = {
   testimonial: string;
@@ -23,7 +24,7 @@ export default function FeedbackCard({
       variants={fadeIn("", "spring", 0.2, 0.75)}
       className="bg-gray-950 p-10 rounded-3xl md:w-[307px] w-full"
     >
-      <p className="text-white text-[60px] font-bold">"</p>
+      <p className="text-white text-[60px] font-bold">&quot;</p>
       <div>
         <p className="tracking-wider text-[18px] line-clamp-7">{testimonial}</p>
         <div className="mt-7 flex justify-between items-center gap-1">
@@ -36,7 +37,9 @@ export default function FeedbackCard({
               {designation} of {company}
             </p>
           </div>
-          <img
+          <Image
+            width={40}
+            height={40}
             src={image.src}
             alt={`feedback by ${name}`}
             className="w-10 h-10 rounded-full object-cover"
